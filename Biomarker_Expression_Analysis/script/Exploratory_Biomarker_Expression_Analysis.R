@@ -80,8 +80,7 @@ dim(tpm_inf)
 # ==========================================================
 markers <- read.csv(
   "/media/jean/OneDrive/Bioinformatica_na_pratica/Aulas_particulares/Bioinformatica_vanessa/genes_markers.csv",
-  stringsAsFactors = FALSE
-)
+  stringsAsFactors = FALSE)
 
 markers
 
