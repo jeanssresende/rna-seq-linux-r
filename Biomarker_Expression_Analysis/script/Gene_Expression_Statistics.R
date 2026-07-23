@@ -342,3 +342,22 @@ interpretation
 # together.
 
 ############################################################
+
+summary_results <- data.frame(
+  Metric = c(
+    "Shapiro p-value",
+    "Paired t-test p-value",
+    "Wilcoxon p-value",
+    "Cohen's d"
+  ),
+  Value = c(
+    shapiro.test(bag1_sag1$Difference)$p.value,
+    paired_ttest$p.value,
+    paired_wilcox$p.value,
+    cohens_d
+  )
+)
+
+write.csv(summary_results,
+  "Biomarker_Expression_Analysis/results/statistical_summary.csv",
+  row.names = FALSE)
