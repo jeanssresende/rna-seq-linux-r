@@ -200,8 +200,8 @@ head(brady_genes)
 
 head(tachy_genes)
 
-
-
+table(brady_genes %in% tachy_genes)
+table(tachy_genes %in% brady_genes)
 ############################################################
 ##
 ## 11. Verify overlap with RNA-Seq dataset
