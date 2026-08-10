@@ -85,13 +85,9 @@ metadata(se_gene)
 ##
 ############################################################
 
-tpm <- assay(
-  se_gene,
-  "abundance"
-)
+tpm <- assay(se_gene, "abundance")
 
 head(tpm)
-
 
 
 ############################################################
@@ -131,8 +127,6 @@ head(tpm_inf)
 summary(as.vector(tpm_inf))
 
 range(tpm_inf)
-
-
 
 ############################################################
 ##
@@ -182,7 +176,6 @@ colnames(tachy_signature)
 ############################################################
 
 
-
 ############################################################
 ##
 ## 9. Extract Gene IDs
@@ -215,11 +208,9 @@ head(tachy_genes)
 ##
 ############################################################
 
-sum(brady_genes %in%
-      rownames(tpm_inf))
+sum(brady_genes %in% rownames(tpm_inf))
 
-sum(tachy_genes %in%
-      rownames(tpm_inf))
+sum(tachy_genes %in% rownames(tpm_inf))
 
 ############################################################
 
@@ -231,7 +222,6 @@ sum(tachy_genes %in%
 # an important quality control step.
 #
 ############################################################
-
 
 
 ############################################################
