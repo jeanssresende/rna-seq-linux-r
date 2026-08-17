@@ -425,13 +425,13 @@ results
 
 write.csv(
   signature,
-  "../results/signature_scores.csv",
+  "Biomarker_Expression_Analysis/results/signature_scores.csv",
   row.names = FALSE
 )
 
 write.csv(
   results,
-  "../results/signature_statistics.csv",
+  "Biomarker_Expression_Analysis/results/signature_statistics.csv",
   row.names = FALSE
 )
 
