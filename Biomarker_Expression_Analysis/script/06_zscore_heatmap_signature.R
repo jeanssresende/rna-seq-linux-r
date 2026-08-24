@@ -9,6 +9,7 @@ setwd("/home/jean/Documentos/Projetos/rna-seq-linux-r/Biomarker_Expression_Analy
 library(tidyverse)
 library(pheatmap)
 library(RColorBrewer)
+library(SummarizedExperiment)
 
 path_results <- "../results"
 path_data <- "/home/jean/Documentos/Projetos/rna-seq-linux-r/Biomarker_Expression_Analysis/Data"
